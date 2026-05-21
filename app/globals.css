@@ -77,6 +77,7 @@ h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin: 0 0 1rem; }
 
 .pulse-footer { margin-top: 3rem; background: #1f2524; color: #eef3ef; }
 .pulse-footer-grid { padding: 2.4rem 0; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1rem; }
+.pulse-footer-brand { display: inline-flex; align-items: center; gap: 0.55rem; }
 .pulse-footer-title { margin: 0; font-family: var(--font-bitter), serif; font-size: 1.1rem; }
 .pulse-muted { color: #b8c4bf; }
 .pulse-col-links { margin-top: 0.5rem; display: grid; gap: 0.45rem; color: #dbe5e0; font-size: 0.9rem; }

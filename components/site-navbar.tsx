@@ -60,13 +60,6 @@ export function SiteNavbar() {
             <span>{open ? "Close" : "Menu"}</span>
           </button>
         </div>
-        <div className="pulse-wrap pulse-mini-links">
-          {SERVICE_HUBS.slice(0, 6).map((page) => (
-            <Link key={page.pageSlug} href={toPath(page.pageSlug)}>
-              {page.primaryKeyword}
-            </Link>
-          ))}
-        </div>
       </header>
 
       <div className={`pulse-drawer ${open ? "pulse-drawer-open" : ""}`} aria-hidden={!open}>

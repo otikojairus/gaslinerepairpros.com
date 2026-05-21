@@ -8,7 +8,10 @@ type Props = { params: Promise<{ slug: string }> };
 export const revalidate = 86400;
 
 export async function generateStaticParams() {
-  return SEO_PAGES.map((page) => ({ slug: page.pageSlug.replace(/^\//, "") }));
+  return SEO_PAGES
+    .map((page) => page.pageSlug.replace(/^\//, ""))
+    .filter((slug) => !slug.includes("/"))
+    .map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
